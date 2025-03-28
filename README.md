@@ -25,7 +25,7 @@ x_{51} & x_{52} & x_{53}
 For each variable (column), calculate the mean and subtract it from the corresponding column. This ensures that the data is centered around zero.
 
 Let the mean of the \( j \)-th column be:
-\[\mu_j = \frac{1}{m} \sum_{i=1}^m x_{ij}\]
+<img src="https://render.githubusercontent.com/render/math?math=\[\mu_j = \frac{1}{m} \sum_{i=1}^m x_{ij}\]">
 
 The centered data matrix \( X_{\text{centered}} \) is:
 \[
