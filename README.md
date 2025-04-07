@@ -1,7 +1,7 @@
 ## Machine Learning Algorithms
 
 ### **Supervised Learning**
-- **Linear Regression**: Predicts continuous values based on input features.
+- **Linear Regression**: Predicts continuous values based on input features [See it in Detail](#Linear Regression Explained (Scratch to Advanced).
 - **Logistic Regression**: Used for binary classification problems.
 - **Decision Trees**: Splits data into branches to make predictions.
 - **Support Vector Machines (SVM)**: Finds the optimal boundary between classes.
