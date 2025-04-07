@@ -115,5 +115,3 @@ To improve model interpretability, irrelevant predictors can be removed using te
 4. Analyzing relationships in research studies.
 
 ---
-
-Linear regression is both simple to understand and powerful, making it a cornerstone of machine learning. Let me know if you'd like to dive into coding this in Python or R!
