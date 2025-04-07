@@ -76,12 +76,100 @@ Where:
 ---
 
 ## Assumptions of Linear Regression
-Linear regression relies on the following assumptions:
-1. **Linearity**: Relationship between predictors and target is linear.
-2. **Independence**: Residuals are independent.
-3. **Homoscedasticity**: Constant variance of errors.
-4. **Normality**: Residuals are normally distributed.
-5. **No Multicollinearity**: Predictors are not highly correlated.
+## Assumptions of Linear Regression
+
+### 1. **Linearity**
+The relationship between the independent variables (predictors) and the dependent variable (target) must be linear.
+
+Mathematical representation:
+**y = β₀ + β₁x₁ + β₂x₂ + ... + βₖxₖ + ε**
+
+Where:
+- **y**: Dependent variable.
+- **x₁, x₂, ..., xₖ**: Independent variables.
+- **β₀, β₁, ..., βₖ**: Coefficients.
+- **ε**: Error term.
+
+---
+
+### 2. **Independence**
+The residuals (errors) should be independent of one another. Violating this assumption results in autocorrelation.
+
+Mathematical test for independence:
+**Cov(εᵢ, εⱼ) = 0, for all i ≠ j**
+
+---
+
+### 3. **Homoscedasticity**
+The variance of the residuals should remain constant across all values of the independent variables.
+
+Mathematical representation:
+**Var(εᵢ) = σ²**
+
+Where:
+- **σ²**: Constant variance.
+
+---
+
+### 4. **Normality**
+The residuals should follow a normal distribution.
+
+Mathematical representation:
+**ε ∼ N(0, σ²)**
+
+Where:
+- **N(0, σ²)**: Residuals are normally distributed with mean 0 and variance σ².
+
+---
+
+### 5. **No Multicollinearity**
+Independent variables should not be highly correlated with one another.
+
+Mathematical test (Variance Inflation Factor - VIF):
+**VIF = 1 / (1 - R²)**
+
+Where:
+- **R²**: Coefficient of determination for the regression of one independent variable on all others.
+
+---
+
+### 6. **Outlier Influence**
+Outliers should not disproportionately affect the model's predictions.
+
+Mathematical representation:
+Outliers are detected using metrics like:
+- **Cook's Distance**: Measures the influence of an individual data point.
+
+Formula for Cook's Distance:
+**Dᵢ = (RSSᵢ / p) × (hᵢ / (1 - hᵢ)²)**
+
+Where:
+- **RSSᵢ**: Residual Sum of Squares excluding observation i.
+- **p**: Number of predictors.
+- **hᵢ**: Leverage of observation i.
+
+---
+
+### 7. **No Autocorrelation**
+Autocorrelation refers to the correlation between residuals of consecutive observations, common in time-series data. It violates the assumption of independence.
+
+Mathematical representation:
+Residuals should satisfy:
+**Cov(εᵢ, εᵢ₋₁) = 0**
+
+Test for autocorrelation:
+- **Durbin-Watson Statistic**:
+  **DW = Σ((εᵢ - εᵢ₋₁)²) / Σ(εᵢ²)**
+
+Where:
+- **DW ≈ 2**: Indicates no autocorrelation.
+- **DW < 2**: Indicates positive autocorrelation.
+- **DW > 2**: Indicates negative autocorrelation.
+
+---
+
+### Summary
+These assumptions are essential for building a reliable and accurate linear regression model. Violating these assumptions can result in biased coefficients, poor predictions, and unreliable statistical inferences.
 
 ---
 
