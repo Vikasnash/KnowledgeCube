@@ -76,7 +76,6 @@ Where:
 ---
 
 ## Assumptions of Linear Regression
-## Assumptions of Linear Regression
 
 ### 1. **Linearity**
 The relationship between the independent variables (predictors) and the dependent variable (target) must be linear.
