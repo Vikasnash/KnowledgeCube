@@ -1,4 +1,4 @@
-## Machine Learning Algorithms
+# Machine Learning Algorithms
 
 ### **Supervised Learning**
 - **Linear Regression**: Predicts continuous values based on input features. [Read it in Detail](#LinearRegressionHead)
