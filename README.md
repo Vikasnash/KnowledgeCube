@@ -143,11 +143,21 @@ A random pattern in residual plots supports the linearity assumption.
 
 ---
 
-### 2. **Independence**
+### 2. **Autocorrelation - Independence**
 The residuals (errors) should be independent of one another. Violating this assumption results in autocorrelation.
 
-Mathematical test for independence:
-**Cov(εᵢ, εⱼ) = 0, for all i ≠ j**
+Autocorrelation refers to the correlation between residuals of consecutive observations, common in time-series data. It violates the assumption of independence.
+Mathematical representation, Residuals should satisfy:
+**Cov(εᵢ, εᵢ₋₁) = 0**
+
+Test for autocorrelation:
+- **Durbin-Watson Statistic**:
+  **DW = Σ((εᵢ - εᵢ₋₁)²) / Σ(εᵢ²)**
+
+Where:
+- **DW ≈ 2**: Indicates no autocorrelation.
+- **DW < 2**: Indicates positive autocorrelation.
+- **DW > 2**: Indicates negative autocorrelation.
 
 ---
 
@@ -198,24 +208,6 @@ Where:
 - **RSSᵢ**: Residual Sum of Squares excluding observation i.
 - **p**: Number of predictors.
 - **hᵢ**: Leverage of observation i.
-
----
-
-### 7. **No Autocorrelation**
-Autocorrelation refers to the correlation between residuals of consecutive observations, common in time-series data. It violates the assumption of independence.
-
-Mathematical representation:
-Residuals should satisfy:
-**Cov(εᵢ, εᵢ₋₁) = 0**
-
-Test for autocorrelation:
-- **Durbin-Watson Statistic**:
-  **DW = Σ((εᵢ - εᵢ₋₁)²) / Σ(εᵢ²)**
-
-Where:
-- **DW ≈ 2**: Indicates no autocorrelation.
-- **DW < 2**: Indicates positive autocorrelation.
-- **DW > 2**: Indicates negative autocorrelation.
 
 ---
 
