@@ -78,17 +78,6 @@ Where:
 ## Assumptions of Linear Regression
 
 ### 1. **Linearity**
-The relationship between the independent variables (predictors) and the dependent variable (target) must be linear.
-
-Mathematical representation:
-**y = β₀ + β₁x₁ + β₂x₂ + ... + βₖxₖ + ε**
-
-Where:
-- **y**: Dependent variable.
-- **x₁, x₂, ..., xₖ**: Independent variables.
-- **β₀, β₁, ..., βₖ**: Coefficients.
-- **ε**: Error term.
-
 The relationship between the independent variables (predictors) and the dependent variable (target) must be **linear** in linear regression.
 
 ### Mathematical Representation:
@@ -150,8 +139,6 @@ Thus, the predicted price of the house is **$465,000**.
 ## Checking the Assumption of Linearity
 
 The assumption of linearity can be checked by analyzing the **residuals** (i.e., actual \( y - \text{predicted } y \)). A random pattern in residual plots supports the linearity assumption.
-
-If you’d like more details about checking residuals or conducting linear regression analysis, let me know!
 ---
 
 ### 2. **Independence**
