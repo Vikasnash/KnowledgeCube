@@ -138,8 +138,7 @@ Thus, the predicted price of the house is **$465,000**.
 
 ### Checking the Assumption of Linearity
 
-The assumption of linearity can be checked by analyzing the **residuals** (i.e., \( \text{actual } (y - \text{predicted } y) \)). 
-
+The assumption of linearity can be checked by analyzing the residuals (i.e., <strong>actual (y - predicted y)</strong>).
 A random pattern in residual plots supports the linearity assumption.
 
 ---
