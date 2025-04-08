@@ -1,7 +1,7 @@
 ## Machine Learning Algorithms
 
 ### **Supervised Learning**
-- **Linear Regression**: Predicts continuous values based on input features. [Read it in Detail](#Linear-Regression-Explained-(Scratch-to-Advanced))
+- **Linear Regression**: Predicts continuous values based on input features. [Read it in Detail](#LinearRegressionHead))
 - **Logistic Regression**: Used for binary classification problems.
 - **Decision Trees**: Splits data into branches to make predictions.
 - **Support Vector Machines (SVM)**: Finds the optimal boundary between classes.
@@ -25,7 +25,7 @@
 - **Deep Q-Networks (DQN)**: Combines Q-learning with deep neural networks.
 
 
-# Linear Regression Explained (Scratch to Advanced)
+# Linear Regression Explained {LinearRegressionHead}
 
 ## What is Linear Regression?
 Linear Regression is a supervised learning algorithm used for predictive modeling. It models the relationship between a dependent variable (target) and one or more independent variables (predictors) by fitting a linear equation to observed data.
