@@ -89,6 +89,69 @@ Where:
 - **β₀, β₁, ..., βₖ**: Coefficients.
 - **ε**: Error term.
 
+The relationship between the independent variables (predictors) and the dependent variable (target) must be **linear** in linear regression.
+
+### Mathematical Representation:
+
+\[
+y = β₀ + β₁x₁ + β₂x₂ + \dots + βₖxₖ + ε
+\]
+
+Where:
+- **y**: Dependent variable (target).
+- **x₁, x₂, ..., xₖ**: Independent variables (predictors).
+- **β₀, β₁, ..., βₖ**: Coefficients of the independent variables.
+- **ε**: Error term that accounts for variability not explained by the model.
+
+---
+
+## Example with Mathematical Proof
+
+Let us assume:
+- **y** is the price of a house (in $1000s),
+- **x₁** is the size of the house (in square feet),
+- **x₂** is the number of bedrooms.
+
+The regression equation is given as:
+
+\[
+y = 50 + 0.2x₁ + 5x₂
+\]
+
+### Coefficients:
+- **Intercept (β₀ = 50):** The base price of a house when size and bedrooms are zero.
+- **Coefficient of x₁ (β₁ = 0.2):** For every additional square foot, the price increases by $200.
+- **Coefficient of x₂ (β₂ = 5):** For every additional bedroom, the price increases by $5000.
+
+### Example Calculation:
+Let:
+- **x₁ = 2000** (size = 2000 sq. ft.),
+- **x₂ = 3** (number of bedrooms = 3).
+
+Using the equation:
+\[
+y = β₀ + β₁x₁ + β₂x₂
+\]
+
+Substitute values:
+\[
+y = 50 + 0.2(2000) + 5(3)
+\]
+
+Simplify:
+\[
+y = 50 + 400 + 15 = 465
+\]
+
+Thus, the predicted price of the house is **$465,000**.
+
+---
+
+## Checking the Assumption of Linearity
+
+The assumption of linearity can be checked by analyzing the **residuals** (i.e., actual \( y - \text{predicted } y \)). A random pattern in residual plots supports the linearity assumption.
+
+If you’d like more details about checking residuals or conducting linear regression analysis, let me know!
 ---
 
 ### 2. **Independence**
