@@ -83,7 +83,7 @@ The relationship between the independent variables (predictors) and the dependen
 ### Mathematical Representation:
 
 \[
-y = β₀ + β₁x₁ + β₂x₂ + \dots + βₖxₖ + ε
+y = β₀ + β₁x₁ + β₂x₂ +.....+ βₖxₖ + ε
 \]
 
 Where:
