@@ -8,16 +8,14 @@ Let the dataset have \( m \) observations (data points) and \( n \) variables (f
 - Each column represents a variable.
 
 For example, if we have a dataset of \( 5 \) observations and \( 3 \) features:
-\[
-X =
-\begin{bmatrix}
-x_{11} & x_{12} & x_{13} \\
-x_{21} & x_{22} & x_{23} \\
-x_{31} & x_{32} & x_{33} \\
-x_{41} & x_{42} & x_{43} \\
-x_{51} & x_{52} & x_{53}
-\end{bmatrix}
-\]
+X = [
+  [x_11, x_12, x_13],
+  [x_21, x_22, x_23],
+  [x_31, x_32, x_33],
+  [x_41, x_42, x_43],
+  [x_51, x_52, x_53]
+]
+
 
 ---
 
